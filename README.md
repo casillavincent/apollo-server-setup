@@ -1,4 +1,4 @@
-# apollo-server-setup
+# Apollo Server + GraphQL setup
 
 A boilerplate code for a simple Apollo Server setup with GraphQL integration
 
