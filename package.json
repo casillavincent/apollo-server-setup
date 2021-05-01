@@ -1,0 +1,28 @@
+{
+   "name": "apollo-server-setup",
+   "version": "1.0.0",
+   "description": "A boilerplate code for a simple Apollo Server setup with GraphQL integration",
+   "main": "app.js",
+   "scripts": {
+      "start": "nodemon ./server/app.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/casillavincent/apollo-server-setup.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/casillavincent/apollo-server-setup/issues"
+   },
+   "homepage": "https://github.com/casillavincent/apollo-server-setup#readme",
+   "devDependencies": {
+      "nodemon": "^2.0.7"
+   },
+   "dependencies": {
+      "apollo-server-express": "^2.24.0",
+      "express": "^4.17.1",
+      "graphql": "^15.5.0"
+   }
+}
