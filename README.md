@@ -9,6 +9,7 @@
 1. Working with resolvers and custom resolvers
 1. Entity Relationships
 1. Fetching from a RESTful API data source
+1. Normalize incoming data from RESTful data sources
 
 ## Install dependencies and packages
 
@@ -68,4 +69,36 @@ const Query = {
 };
 
 module.exports = { Query };
+```
+
+# Setup ESLint
+
+```
+$ npm install eslint
+$ npx eslint --init
+$ npx eslint ./js/scripts.js
+```
+
+# Normalize Incoming Data
+
+> Since the incoming data doesnt match the schema I set, we need to normalize the data so it matches. The map method will go through the iterable array and set them into a new array of objects in "normalizedData"
+
+```javascript
+catFacts: async () => {
+      const endpoint = await fetch("https://cat-fact.herokuapp.com/facts");
+      const data = await endpoint.json();
+
+      const normalizedData = data.map((fact) => {
+         const objData = {
+            id: fact._id,
+            type: fact.type,
+            text: fact.text,
+            source: fact.source,
+         };
+         return objData;
+      });
+
+      console.log(normalizedData);
+      return normalizedData;
+   },
 ```

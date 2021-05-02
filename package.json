@@ -11,7 +11,7 @@
       "url": "git+https://github.com/casillavincent/apollo-server-setup.git"
    },
    "keywords": [],
-   "author": "",
+   "author": "Vincent Casilla",
    "license": "ISC",
    "bugs": {
       "url": "https://github.com/casillavincent/apollo-server-setup/issues"
@@ -24,6 +24,7 @@
       "apollo-datasource-rest": "^0.13.0",
       "apollo-server": "^2.24.0",
       "apollo-server-express": "^2.24.0",
+      "eslint": "^7.25.0",
       "express": "^4.17.1",
       "graphql": "^15.5.0",
       "node-fetch": "^2.6.1",

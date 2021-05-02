@@ -7,6 +7,14 @@ const typeDefs = gql`
       email: String!
       password: String!
       age: Int!
+      gender: Gender!
+   }
+
+   type Gender {
+      id: ID!
+      gender: String!
+      slug: String!
+      users: [User!]!
    }
 
    type CatFact {
@@ -20,6 +28,8 @@ const typeDefs = gql`
       users: [User!]
       user(id: ID!): User!
       catFacts: [CatFact!]
+      genders: [Gender!]
+      gender(id: ID!): Gender!
    }
 `;
 
