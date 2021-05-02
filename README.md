@@ -71,7 +71,7 @@ const Query = {
 module.exports = { Query };
 ```
 
-# Setup ESLint
+## Setup ESLint
 
 ```
 $ npm install eslint
@@ -79,9 +79,9 @@ $ npx eslint --init
 $ npx eslint ./js/scripts.js
 ```
 
-# Normalize Incoming Data
+## Normalize Incoming Data
 
-> Since the incoming data doesnt match the schema I set, we need to normalize the data so it matches. The map method will go through the iterable array and set them into a new array of objects in "normalizedData"
+> Since the incoming data doesnt match the schema I established, I needed to normalize the data so that it is identical to the schema. The map method will go through the iterable items and set them into a new array of objects in "normalizedData"
 
 ```javascript
 catFacts: async () => {
