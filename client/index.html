@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Apollo Client</title>
+      <!-- Scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.birds.min.js"></script>
+
+      <link rel="stylesheet" href="./scss/index.css" />
+   </head>
+
+   <body>
+      <div class="container" id="container">
+         <div class="splash-content">
+            <h1>Apollo Client</h1>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dignissimos, similique
+               cumque est perspiciatis exercitationem libero labore veniam ratione beatae unde earum
+               eveniet totam, dolore accusamus minima! Sed, voluptatem ad.
+            </p>
+         </div>
+      </div>
+      <script>
+         VANTA.BIRDS({
+            el: "#container",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+            backgroundColor: 0x202124,
+            color1: 0x2db6cf,
+            color2: 0xff00c3,
+            birdSize: 2.8,
+            wingSpan: 22.0,
+            separation: 31.0,
+            quantity: 2.0,
+         });
+      </script>
+   </body>
+</html>
